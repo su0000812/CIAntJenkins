@@ -1,9 +1,10 @@
 package com.example.antjenkins;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		TextView tv_test = (TextView)findViewById(com.example.antjenkins.R.id.tv_for_test);
+		tv_test.setText("make some change and push to github!!!");
 	}
 
 	@Override
